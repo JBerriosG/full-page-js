@@ -1,0 +1,262 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+/* clases de fullpage.js */
+
+#fp-nav ul li a span{
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: orange;
+}
+
+/* Menu de navegacio */
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: .8rem;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a{
+    color: orange;
+}
+/* Header */
+
+.header{
+    background: url('../media/bg-imagen.jpeg');
+    background-position: center;
+}
+
+.header .contenedor-titulo{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header .titulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono{
+    position: absolute;
+    z-index: 2;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.bg-video{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: #000;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+@keyframes bajar-subir{
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+/* Productos */
+.productos article{
+    background-position: center;
+    background-size: cover;
+}
+
+.productos article:nth-child(1){
+    background-image: url('../media/producto-01.jpg');
+}
+.productos article:nth-child(2){
+    background-image: url('../media/producto-02.jpg');
+}
+.productos article:nth-child(3){
+    background-image: url('../media/producto-03.jpg');
+}
+
+.producto .informacion-producto::before{
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    margin: -10px;
+}
+
+.productos .informacion-producto{
+    position: absolute;
+    top: 80%;
+    margin: 0 30px;
+}
+
+.productos .modelo{
+    font-size: 2rem;
+}
+.productos .descripcion{
+    font-size: 1rem;
+}
+.productos .precio{
+    font-size: .8rem;
+}
+
+.productos .precio::before{
+    content: "$";
+}
+
+/* Flechas de slide */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 60%;
+    border-width: 1rem 1rem 1rem 0;
+    border-color: transparent #000 transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right: 50px;
+    border-width: 1rem 0 1rem 1rem;
+    border-color: transparent transparent transparent #000;
+}
+
+/* footer */
+.footer .texto-naranja{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.footer h2{
+    opacity: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: 1s ease all;
+}
+
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.footer .redes-sociales a{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    background: #fff;
+    color: #31303A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    margin: 0 20px;
+}
+
+.footer .facebook i{
+    color: #3b5998;
+}
+.footer .twitter i{
+    color: #1da1f2;
+}
+.footer .instagram i{
+    color: #c13584;
+}
+
+.footer .facebook:hover{
+    background: #3b5998;
+}
+.footer .twitter:hover{
+    background: #1da1f2;
+}
+.footer .instagram:hover{
+    background: #c13584;
+}
+
+.footer .facebook:hover i{ 
+    color: #fff;
+}
+.footer .twitter:hover i{
+    color: #fff;
+}
+.footer .instagram:hover i{
+    color: #fff;
+}

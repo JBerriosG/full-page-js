@@ -1,0 +1,37 @@
+/* nav */
+.nav li,
+.nav a{
+    font-size: 1.5rem;
+}
+
+/* header */
+.header .titulo{
+    font-size: 5.5rem;
+}
+
+.header .contenedor-titulo{
+    font-size: 2.3rem;
+}
+
+/* productos */
+.productos .modelo{
+    font-size: 4rem;
+}
+.productos .descripcion{
+    font-size: 2rem;
+}
+.productos .precio{
+    font-size: 1.7rem;
+}
+
+/* footer */
+.footer .texto-naranja,
+.footer .redes-sociales{
+    font-size: 4rem;
+}
+
+.footer .redes-sociales a{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+}
