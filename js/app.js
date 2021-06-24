@@ -40,3 +40,4 @@ const seccionesPagina = new fullpage('#fullpage', {
    },
    parallax: true
 });
+
